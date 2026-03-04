@@ -6,12 +6,18 @@
   "customizations": {
     "vscode": {
       "settings": {
-        "python.defaultInterpreterPath": "/usr/local/bin/python"
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "github.copilot.enable": { "*": false },
+        "github.chat.agent.enabled": false,
+        "github.copilot.chat.agent.autoFix": false,
+        "github.copilot.inlineSuggest.enable": false,
+        "chat.commandCenter.enabled": false
       },
       "extensions": [
         "ms-toolsai.jupyter",
         "ms-python.python",
-        "ms-toolsai.jupyter-keymap"
+        "ms-toolsai.jupyter-keymap",
+         "-github.copilot-chat"
       ]
     }
   },
