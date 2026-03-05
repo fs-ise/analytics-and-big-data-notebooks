@@ -1,10 +1,8 @@
 {
   "name": "Jupyter Data Science",
-  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "image": "quay.io/jupyter/scipy-notebook:python-3.13",
 
   "forwardPorts": [8888],
-
-  "postCreateCommand": "pip install pandas",
 
   "customizations": {
     "vscode": {
