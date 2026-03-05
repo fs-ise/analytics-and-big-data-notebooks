@@ -1,26 +1,13 @@
 {
-  "name": "Analytics Course Environment",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
+  "name": "Jupyter Data Science",
+  "image": "jupyter/datascience-notebook:latest",
+  "forwardPorts": [8888],
   "customizations": {
     "vscode": {
-      "settings": {
-        "python.defaultInterpreterPath": "/usr/local/bin/python",
-        "github.copilot.enable": { "*": false },
-        "github.chat.agent.enabled": false,
-        "github.copilot.chat.agent.autoFix": false,
-        "github.copilot.inlineSuggest.enable": false,
-        "chat.commandCenter.enabled": false
-      },
       "extensions": [
         "ms-toolsai.jupyter",
-        "ms-python.python",
-        "ms-toolsai.jupyter-keymap",
-         "-github.copilot-chat"
+        "ms-python.python"
       ]
     }
-  },
-  "postCreateCommand": "pip install -r requirements.txt && python -m ipykernel install --user --name analytics-env --display-name 'Python (Analytics)'",
-  "remoteUser": "vscode"
+  }
 }
