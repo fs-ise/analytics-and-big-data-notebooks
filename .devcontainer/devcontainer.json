@@ -1,6 +1,6 @@
 {
   "name": "Jupyter Data Science",
-  "image": "jupyter/scipy-notebook:latest",
+  "image": "jupyter/scipy-notebook:2024-02-24",
   "forwardPorts": [8888],
   "customizations": {
     "vscode": {
