@@ -1,2 +1,5 @@
 jupyter
 ipykernel
+statsmodels
+scikit-learn
+matplotlib
