@@ -3,3 +3,4 @@ ipykernel
 statsmodels
 scikit-learn
 matplotlib
+sentence_transformers
